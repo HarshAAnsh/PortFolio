@@ -7,6 +7,9 @@ const app = express();
 
 app.use(cors());
 app.use(express.json());
+app.get("/", (req, res) => {
+  res.send("Portfolio Backend Running 🚀");
+});
 
 app.use("/api/contact", require("./routes/contact"));
 
