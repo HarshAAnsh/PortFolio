@@ -28,12 +28,15 @@ function HeroSection() {
                Enthusiastic and goal-driven proffesional with 3 years of Proffesional experience in Web Development and DevOps . 
             </p>
             <div className='flex items-center gap-3 pt-9 flex-col sm:flex-row sm:w-max lg:mx-auto'>
-                <button className='px-6 md:px-7 py-3 rounded-full relative group w-full sm:w-max flex justify-center'>
-                    <span className='absolute inset-0 rounded-3xl group-hover:scale-105 origin-center transition-all ease-in-out bg-primary border-2 border-transparent'></span>
-                    <span className='relative flex items-center justify-center text-white'>
-                Hire Me
-                    </span>
-                </button>
+               <a
+  href="#contact"
+  className="px-6 md:px-7 py-3 rounded-full relative group w-full sm:w-max flex justify-center"
+>
+  <span className="absolute inset-0 rounded-3xl group-hover:scale-105 origin-center transition-all ease-in-out bg-primary border-2 border-transparent"></span>
+  <span className="relative flex items-center justify-center text-white">
+    Hire Me
+  </span>
+</a>
                 <button className='border border-primary px-6 md:px-7 py-3 rounded-full relative group w-full sm:w-max flex justify-center'>
                 <div className='hover:scale-105 transition-all ease-in-out flex justify-center items-center relative'>
                     <div className='svg-cntainer'>

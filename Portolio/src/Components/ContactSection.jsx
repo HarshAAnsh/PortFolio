@@ -15,28 +15,28 @@ function ContactSection() {
       icon: FaEnvelope,
       title: "Email",
       value: "harshmishra37992@gmail.com",
-      link: "mailto:harshmishra37992@gmail.com",
+      link: "mailto:harshmishra37992@gmail.com"
     },
     {
       id: 2,
       icon: FaPhone,
       title: "Phone",
       value: "+919570269214",
-      link: "tel:+919570269214",
+      link: "tel:+919570269214"
     },
     {
       id: 3,
       icon: FaLinkedin,
       title: "linkedIn",
       value: "linkedin.com",
-      link: "https://www.linkedin.com/in/bhaskar90808",
+      link: "https://www.linkedin.com/in/bhaskar90808"
     },
     {
       id: 4,
       icon: FaMapMarkedAlt,
       title: "Location",
       value: "Gurugram, Haryana, India, 122022",
-      link: "#",
+      link: "#"
     },
   ];
   const [email, setEmail] = useState("");
