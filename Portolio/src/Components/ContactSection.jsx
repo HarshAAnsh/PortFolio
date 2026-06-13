@@ -69,7 +69,7 @@ if (!emailRegex.test(email)) {
 }
     try {
       setLoading(true);
-
+console.log(import.meta.env.VITE_API_URL);
       const response = await axios.post(
   `${import.meta.env.VITE_API_URL}/api/contact`,
   {
