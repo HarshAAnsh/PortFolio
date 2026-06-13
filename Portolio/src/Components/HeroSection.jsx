@@ -1,6 +1,7 @@
 import React from 'react';
 import { Download, Menu, X } from "lucide-react";
 import Hero from "../assets/Hero.png"
+import Bhaskar from "../assets/BhaskarV1.2.pdf"
 
 function HeroSection() {
   return (
@@ -40,7 +41,7 @@ function HeroSection() {
                         className='text-primary'/>
                         <div className='download-loader text-white hidden'></div>
                     </div>
-                    <a href="/resume.pdf" 
+                    <a href={Bhaskar} 
                     download='resume.pdf'
                     className='pl-2 text-primary'> 
                     Dowload Resume

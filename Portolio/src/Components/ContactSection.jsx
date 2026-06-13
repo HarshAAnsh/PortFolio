@@ -29,7 +29,7 @@ function ContactSection() {
       icon: FaLinkedin,
       title: "linkedIn",
       value: "linkedin.com",
-      link: "#",
+      link: "https://www.linkedin.com/in/bhaskar90808",
     },
     {
       id: 4,
