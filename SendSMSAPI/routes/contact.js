@@ -1,5 +1,8 @@
 const express = require("express");
 const router = express.Router();
+const { Resend } = require("resend");
+
+const resend = new Resend(process.env.RESEND_API_KEY);
 
 const nodemailer = require("nodemailer");
 
@@ -14,46 +17,30 @@ router.post("/", async (req, res) => {
       });
     }
 
-    const transporter = nodemailer.createTransport({
-  host: "smtp.gmail.com",
-  port: 587,
-  secure: false,
-  auth: {
-    user: process.env.EMAIL_USER,
-    pass: process.env.EMAIL_PASS,
-  },
-});
-
-    await transporter.sendMail({
-      from: process.env.EMAIL_USER,
-      replyTo: email,
+    await resend.emails.send({
+      from: "onboarding@resend.dev",
       to: "bhaskarharsh37992@gmail.com",
       subject: "Portfolio Contact Message",
-
       html: `
         <h2>Portfolio Contact Form</h2>
-
         <p><strong>From:</strong> ${email}</p>
-
-        <p><strong>Message:</strong></p>
-
         <p>${message}</p>
-      `
+      `,
     });
 
     res.json({
       success: true,
-      message: "Email sent successfully"
+      message: "Email sent successfully",
     });
 
-  }catch (err) {
-  console.error("Email Error:", err);
+  } catch (err) {
+    console.error(err);
 
-  res.status(500).json({
-    success: false,
-    message: err.message
-  });
-}
+    res.status(500).json({
+      success: false,
+      message: err.message,
+    });
+  }
 });
 
 module.exports = router;
