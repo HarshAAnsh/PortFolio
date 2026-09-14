@@ -1,7 +1,7 @@
 import React from 'react';
 import { Download, Menu, X } from "lucide-react";
 import Hero from "../assets/Hero.png"
-import Bhaskar from "../assets/BhaskarV1.2.pdf"
+import Bhaskar from "../assets/BhaskarResume.pdf"
 
 function HeroSection() {
   return (
@@ -25,8 +25,7 @@ function HeroSection() {
                 </h1>
             </div>
             <p className='text-grey-300 pt-8 text-center lg:text-left mx:auto max-w-xl'>
-               Enthusiastic and goal-driven proffesional with 3 years of Proffesional experience in Web Development and DevOps . 
-            </p>
+Full Stack AI/ML Engineer with 3 years of experience spanning web application development, backend engineering, DevOps/observability, Python data analytics, ETL, and machine learning. Strong hands-on experience building production-oriented applications with React.js, Node.js, Express.js, Python, Django REST/FastAPI, ASP.NET/.NET, SQL/NoSQL databases, AWS/Azure, Docker, CI/CD, Prometheus and Grafana. Experienced in developing REST APIs, real-time applications, AI/ML pipelines, data-processing workflows, dashboards, monitoring systems, and cloud deployment automation. Comfortable working across the complete lifecycle from requirements and architecture through development, testing, deployment, monitoring, and support.            </p>
             <div className='flex items-center gap-3 pt-9 flex-col sm:flex-row sm:w-max lg:mx-auto'>
                <a
   href="#contact"
